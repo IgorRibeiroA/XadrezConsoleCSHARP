@@ -1,0 +1,13 @@
+C:\Users\acern\Desktop\GITHUB\xadrez-console\bin\Debug\netcoreapp3.1\xadrez-console.exe
+C:\Users\acern\Desktop\GITHUB\xadrez-console\bin\Debug\netcoreapp3.1\xadrez-console.deps.json
+C:\Users\acern\Desktop\GITHUB\xadrez-console\bin\Debug\netcoreapp3.1\xadrez-console.runtimeconfig.json
+C:\Users\acern\Desktop\GITHUB\xadrez-console\bin\Debug\netcoreapp3.1\xadrez-console.runtimeconfig.dev.json
+C:\Users\acern\Desktop\GITHUB\xadrez-console\bin\Debug\netcoreapp3.1\xadrez-console.dll
+C:\Users\acern\Desktop\GITHUB\xadrez-console\bin\Debug\netcoreapp3.1\xadrez-console.pdb
+C:\Users\acern\Desktop\GITHUB\xadrez-console\obj\Debug\netcoreapp3.1\xadrez-console.csprojAssemblyReference.cache
+C:\Users\acern\Desktop\GITHUB\xadrez-console\obj\Debug\netcoreapp3.1\xadrez-console.AssemblyInfoInputs.cache
+C:\Users\acern\Desktop\GITHUB\xadrez-console\obj\Debug\netcoreapp3.1\xadrez-console.AssemblyInfo.cs
+C:\Users\acern\Desktop\GITHUB\xadrez-console\obj\Debug\netcoreapp3.1\xadrez-console.csproj.CoreCompileInputs.cache
+C:\Users\acern\Desktop\GITHUB\xadrez-console\obj\Debug\netcoreapp3.1\xadrez-console.dll
+C:\Users\acern\Desktop\GITHUB\xadrez-console\obj\Debug\netcoreapp3.1\xadrez-console.pdb
+C:\Users\acern\Desktop\GITHUB\xadrez-console\obj\Debug\netcoreapp3.1\xadrez-console.genruntimeconfig.cache
