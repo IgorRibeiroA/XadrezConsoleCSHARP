@@ -1,4 +1,4 @@
-﻿
+﻿//classe generica/superclasse das peças do jogo
 namespace tabuleiro {
     class Peca {
         public Posicao Posicao { get; set; }

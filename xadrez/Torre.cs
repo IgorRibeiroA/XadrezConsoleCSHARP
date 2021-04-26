@@ -1,4 +1,5 @@
-﻿using tabuleiro;
+﻿//subclasse da superclasse Peca
+using tabuleiro;
 
 namespace xadrez {
     class Torre : Peca {

@@ -1,4 +1,4 @@
-﻿
+﻿//define a posição de cada peça pela indicação do user
 
 namespace tabuleiro {
     class Posicao {
