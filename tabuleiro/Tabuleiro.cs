@@ -32,7 +32,17 @@ namespace tabuleiro {
             Pecas[pos.Linha, pos.Coluna] = p;
             p.Posicao = pos;
         }
-        //logica basica de endereço   para a movimentação de cada peça
+        public Peca retirarPeca(Posicao pos) {
+            if(peca(pos) == null) {
+                return null;
+            }
+            Peca aux = peca(pos);
+            aux.Posicao = null;
+            Pecas[pos.Linha, pos.Coluna] = null;
+            return aux;
+        }
+
+        //logica basica de endereço para a movimentação de cada peça
         public bool posicaoValida(Posicao pos) {
             if (pos.Linha<0 || pos.Linha>=Linhas || pos.Coluna<0 || pos.Coluna >= Colunas) {
                 return false;

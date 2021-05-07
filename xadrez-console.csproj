@@ -6,4 +6,10 @@
     <RootNamespace>xadrez_console</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="xadrez\PartidadeDeXadrez\**" />
+    <EmbeddedResource Remove="xadrez\PartidadeDeXadrez\**" />
+    <None Remove="xadrez\PartidadeDeXadrez\**" />
+  </ItemGroup>
+
 </Project>
