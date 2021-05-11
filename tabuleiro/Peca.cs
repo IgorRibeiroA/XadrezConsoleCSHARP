@@ -1,6 +1,6 @@
 ﻿//classe generica/superclasse das peças do jogo
 namespace tabuleiro {
-    class Peca {
+    abstract class Peca {
         public Posicao Posicao { get; set; }
         public Cor Cor { get; protected set; }
         public int QteMovimentos { get; protected set; }
@@ -15,5 +15,8 @@ namespace tabuleiro {
         public void incrementarQteMovimentos() {
             QteMovimentos++;
         }
+        public abstract bool[,] movimentosPossiveis();
+           
+        
     }
 }
