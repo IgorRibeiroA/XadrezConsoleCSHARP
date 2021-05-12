@@ -1,4 +1,4 @@
-﻿//classe generica/superclasse das peças do jogo
+﻿//classe generica ou superclasse das peças do jogo
 namespace tabuleiro {
     abstract class Peca {
         public Posicao Posicao { get; set; }
@@ -8,12 +8,27 @@ namespace tabuleiro {
 
         public Peca(Cor cor, Tabuleiro tab) {
             Posicao = null;
-            Cor = cor;
             Tab = tab;
+            Cor = cor;
             QteMovimentos = 0;
         }
         public void incrementarQteMovimentos() {
             QteMovimentos++;
+        }
+        public bool existeMovimentosPossiveis() {
+            bool[,] mat = movimentosPossiveis();
+            for(int i=0; i<Tab.Colunas; i++) {
+                for(int j=0; i<Tab.Colunas; j++) {
+                    if(mat[i, j]) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        public bool podeMoverPara(Posicao pos) {
+            return movimentosPossiveis()[pos.Linha, pos.Coluna];
         }
         public abstract bool[,] movimentosPossiveis();
            
