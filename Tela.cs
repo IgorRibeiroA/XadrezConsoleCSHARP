@@ -1,10 +1,38 @@
 ﻿// classe para imprimir o Tabuleiro por meio da matriz
 using System;
+using System.Collections.Generic;
 using tabuleiro;
 using xadrez;
 
 namespace xadrez_console {
     class Tela {
+
+
+        public static void imprimirPartida(PartidaDeXadrez partida) {
+            imprimirTabuleiro(partida.Tab);
+            Console.WriteLine();
+            imprimirPecasCapturadas(partida);
+            Console.WriteLine();
+            Console.WriteLine("Turno: " + partida.Turno);
+            Console.WriteLine("Aguardando jogada: " + partida.JogadorAtual);
+        }
+
+        public static void imprimirPecasCapturadas(PartidaDeXadrez partida) {
+            Console.WriteLine("Peças Capturadas");
+            Console.Write("Brancas: ");
+            imprimirConjunto(partida.pecasCapturadas(Cor.Branca));
+            Console.WriteLine();
+            Console.Write("Preta: ");
+            imprimirConjunto(partida.pecasCapturadas(Cor.Preta));
+            Console.WriteLine();
+        }
+        public static void imprimirConjunto (HashSet<Peca> conjuto) {
+            Console.Write("[");
+            foreach (Peca x in conjuto) {
+                Console.Write(x);
+            }
+            Console.Write("]");
+        }
         public static void imprimirTabuleiro(Tabuleiro tab) {
             for (int i=0; i<tab.Linhas; i++) {
                 Console.Write(8 - i +" ");
